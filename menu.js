@@ -30,8 +30,14 @@
     'kids'
 */
 
-//CODE HERE
-
+const pizza = {
+    name: "Pepperoni Lover",
+    price: 10.99,
+    category: "Event",
+    popularity: 9,
+    rating: 10,
+    tags: ['kids', 'party', 'meat']
+}
 
 
 //////////////////PROBLEM 2////////////////////
