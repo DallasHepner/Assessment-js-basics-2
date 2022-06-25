@@ -86,7 +86,10 @@ calcFinalPrice(26.97, 0.1, 0.06)
 */
 
 /*
-    TEXT ANSWER HERE
+    price total
+    item total
+    names of each item
+    name of customer
 
 */
 
@@ -95,4 +98,11 @@ calcFinalPrice(26.97, 0.1, 0.06)
     guidelines.
 */
 
-//CODE HERE
+let Customer = [
+    {
+        name: 'Jane',
+        itemTotal: 3,
+        cost: 18.87,
+        items: ['chicken alfredo', 'caesar salad', 'chicken scampi'],
+    }
+]
