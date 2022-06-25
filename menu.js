@@ -109,11 +109,11 @@ let foodArr = ['Pineapple Finatic', 12.99, 'Hawaiian', 8, 9]
     your food objects has.
 */
 
-//CODE HERE
-
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
-
+const filteredFood = foodArr.filter(foodFil);
+function foodFil(foodArr){
+    return foodArr === 'Hawaiian'
+}
+// console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
 /* 
