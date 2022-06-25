@@ -77,8 +77,15 @@ const canWeDeliver = (zipCode) => {
     Name your new function `canWeDeliverTwo`.
 */
 
-// CODE HERE
+const canWeDeliverTwo = (zipCode) => {
+    if (deliveryAreaZipCodes.includes(zipCode)){
+        return `You're in our delivery zone!`
+    }else{
+        return `You're out of our delivery zone!`
+    }
+}
 
+// console.log(canWeDeliverTwo(85206))
 
 //////////////////PROBLEM 3////////////////////
 /* 
