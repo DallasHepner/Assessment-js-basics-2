@@ -170,13 +170,17 @@ const filteredFood = foodArr.filter(foodArr => foodArr.tags.includes('grill'));
 // property = string(raiting, popularity, price)
 // number = number to compare against
 // type = above or below
-// function filterByProperty(property, number, type){
-//     let filterdArr = []
-//     const filteredArr = foodArr.filter(type)
-//     if (filteredArr === 'above'){
-//         return 
-//     }
-// }
+
+function filterByProperty(property, number, higherOrLower) {
+    const filteredArr = []
+    for(let i = 0; i < foodArr.length; i++){
+        if(higherOrLower === 'above'){
+            return filteredArr.filter(foodArr => foodArr.property > number)
+        }else if(higherOrLower === 'below'){
+            return filteredArr.filter(foodArr => foodArr.property < number)
+        }
+    }
+}
 
 /*
     Invoke the `filterByProperty` function passing
@@ -185,4 +189,4 @@ const filteredFood = foodArr.filter(foodArr => foodArr.tags.includes('grill'));
     You'll have to console.log to see the filtered array
 */
 
-//CODE HERE
+// console.log(filterByProperty('rating', 5, 'above'))
