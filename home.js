@@ -47,8 +47,17 @@ const greetUser = (username) => console.log(`Welcome back, ${username}`)
 
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
-//CODE HERE
+const canWeDeliver = (zipCode) => {
+    for(let i = 0; i < deliveryAreaZipCodes.length; i++) {
+        if (zipCode === deliveryAreaZipCodes[i]){
+            return `You're in our delivery zone!`
+        }else{
+            return `You're out of our delivery zone!`
+        }
+    }
+}
 
+// console.log(canWeDeliver(84606))
 
 
 /* 
