@@ -95,9 +95,7 @@ const {category: newCategory} = pizza;
     data in some functions that you'll write.
 */
 
-//CODE HERE
-
-
+let foodArr = ['Pineapple Finatic', 12.99, 'Hawaiian', 8, 9]
 
 //////////////////PROBLEM 4////////////////////
 /* 
