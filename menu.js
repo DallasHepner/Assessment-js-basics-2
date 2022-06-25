@@ -95,7 +95,24 @@ const {category: newCategory} = pizza;
     data in some functions that you'll write.
 */
 
-let foodArr = ['Pineapple Finatic', 12.99, 'Hawaiian', 8, 9]
+let foodArr = [
+    {
+        name: "Pineapple Finactic",
+        price: 12.99,
+        category: "Hawaiian",
+        popularity: 8,
+        rating: 9,
+        tags: ['kids', 'party', 'fruit']
+    },
+    {
+        name: "BBQ",
+        price: 13.99,
+        category: "Diferent",
+        popularity: 6,
+        rating: 10,
+        tags: ['grill', 'personal', 'meat']
+    },
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -109,10 +126,7 @@ let foodArr = ['Pineapple Finatic', 12.99, 'Hawaiian', 8, 9]
     your food objects has.
 */
 
-const filteredFood = foodArr.filter(foodFil);
-function foodFil(foodArr){
-    return foodArr === 'Hawaiian'
-}
+const filteredFood = foodArr.filter(foodArr => foodArr.tags.includes('grill'));
 // console.log(filteredFood)
 
 //////////////////PROBLEM 5////////////////////
@@ -153,9 +167,16 @@ function foodFil(foodArr){
     
     Return the filtered array from the entire function
 */
-
-//CODE HERE
-
+// property = string(raiting, popularity, price)
+// number = number to compare against
+// type = above or below
+// function filterByProperty(property, number, type){
+//     let filterdArr = []
+//     const filteredArr = foodArr.filter(type)
+//     if (filteredArr === 'above'){
+//         return 
+//     }
+// }
 
 /*
     Invoke the `filterByProperty` function passing
