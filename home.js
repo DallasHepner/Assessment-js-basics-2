@@ -21,10 +21,8 @@
     'Welcome back, Andrew'
 */
 
-//CODE HERE
-
-
-
+const greetUser = (username) => console.log(`Welcome back, ${username}`)
+// greetUser('Dallas')
 
 
 //////////////////PROBLEM 2////////////////////
