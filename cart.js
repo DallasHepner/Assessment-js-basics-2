@@ -38,7 +38,7 @@ const cart = [
 const summedPrice = cart.reduce(function(item, money){
     return item + money.price
 }, 0)
-console.log(summedPrice)
+// console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -55,9 +55,15 @@ console.log(summedPrice)
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
-
-
+function calcFinalPrice(cartTotal, couponValue, tax){
+    cartTotal = cart.reduce(function(item, money){
+        return item + money.price
+    }, 0)
+    couponTot = cartTotal - (cartTotal * couponValue)
+    taxTot = (couponTot * tax) + couponTot
+    console.log(taxTot.toFixed(2))
+}
+calcFinalPrice(26.97, 0.1, 0.06)
 
 //////////////////PROBLEM 3////////////////////
 /*  
