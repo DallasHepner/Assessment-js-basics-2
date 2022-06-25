@@ -120,7 +120,10 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-//CODE HERE
+// console.log(deals[0].title)
+const downByFive = deals[0].title.replace('5', '0')
+// console.log(downByFive)
+// console.log(deals[0].title) // make sure the original didn't change
 
 
 
@@ -137,4 +140,6 @@ const deals = [
     to be displaying wrong on the live site.
 */
 
-//CODE HERE
+const monthlyDeal = deals[1].desc.replace('March', 'April')
+const noSpace = monthlyDeal.trim()
+// console.log(noSpace)
